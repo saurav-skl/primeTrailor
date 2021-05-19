@@ -7,6 +7,7 @@ import MovieIcon from "@material-ui/icons/Movie";
 import SearchIcon from "@material-ui/icons/Search";
 import WhatshotIcon from "@material-ui/icons/Whatshot";
 import { useHistory } from "react-router";
+import { motion } from "framer-motion";
 
 const useStyles = makeStyles({
   root: {
@@ -33,8 +34,7 @@ const Mainnav = () => {
     } else if (value === 3) {
       history.push("/search");
     }
-  }, [value,history])
-
+  }, [value, history]);
 
   return (
     <BottomNavigation
@@ -49,25 +49,32 @@ const Mainnav = () => {
         style={{ color: "white" }}
         label="Trending"
         icon={<WhatshotIcon />}
+        component={motion.div}
+        whileHover={{ scale: 1.1 }}
       />
       <BottomNavigationAction
         style={{ color: "white" }}
         label="Movies"
         icon={<MovieIcon />}
+        component={motion.div}
+        whileHover={{ scale: 1.1 }}
       />
       <BottomNavigationAction
         style={{ color: "white" }}
         label="TV Series"
         icon={<TvIcon />}
+        component={motion.div}
+        whileHover={{ scale: 1.1 }}
       />
       <BottomNavigationAction
         style={{ color: "white" }}
         label="Search"
         icon={<SearchIcon />}
+        component={motion.div}
+        whileHover={{ scale: 1.1 }}
       />
     </BottomNavigation>
   );
 };
 
 export default Mainnav;
-

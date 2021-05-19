@@ -3,12 +3,13 @@
   flex-direction: column;
   width: 220px;
   padding: 5px;
-  margin: 5px 0;
+  margin: 7px 3px;
   background-color: #D5C3AA;
   color: black;
   border-radius: 10px;
   position: relative;
   font-family: "Montserrat", sans-serif;
+  height:400px;
 }
 
 .media:hover {
