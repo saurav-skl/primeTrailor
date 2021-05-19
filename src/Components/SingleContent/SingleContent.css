@@ -4,22 +4,22 @@
   width: 220px;
   padding: 5px;
   margin: 7px 3px;
-  background-color: #D5C3AA;
+  background-color: #d5c3aa;
   color: black;
   border-radius: 10px;
   position: relative;
   font-family: "Montserrat", sans-serif;
-  height:400px;
 }
 
 .media:hover {
-  background-color: #F2AA4CFF;
+  background-color: #f2aa4cff;
   color: black;
 }
 
 @media (max-width: 550px) {
   .media {
     width: 47%;
+    /* height: 400px; */
   }
 }
 
@@ -46,4 +46,7 @@
   padding-bottom: 3px;
   padding: 0 2px;
   padding-bottom: 3px;
+}
+.singleContent__img {
+  width: 100%;
 }
