@@ -28,9 +28,9 @@ const SingleContent = ({
             color={vote_average > 6 ? "primary" : "secondary"}
           />
           <img
-            className="poster"
+            className="poster singleContent__img"
             src={poster ? `${img_300}${poster}` : unavailable}
-            alt={title}
+            alt={title}          
           />
           <b className="title">{title}</b>
           <span className="subTitle">
